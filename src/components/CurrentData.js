@@ -59,14 +59,14 @@ const CurrentData = ({long, lat, cityname}) => {
             <div className='CurrentDataWind'>Wind Speed: {windSpeed !== null ? `${windSpeed} km/h` : 'Loading...'}
             <img src={Arrow} alt="arrow" 
                 style={{
-                    transform: `rotate(${windDirection}deg)`,
+                    transform: `rotate(${windDirection-180}deg)`,
                     transition: 'transform 0.5s',
                     width: '50px',
                     height: 'auto',
                     padding: '10px',
                     marginLeft: '50px'
                 }}
-                title = {windDirection}
+                title = {windDirection-180}
             />
             </div>
             </div>
