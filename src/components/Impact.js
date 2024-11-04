@@ -82,8 +82,7 @@ const Impact = () => {
                     </select>
                 
                 {error && <p className="error">{error}</p>}
-                     
-                
+                 
                 <p title="Wave Height"><img src={WaveHeightImg} alt="wave height" /> {waveHeight || "N/A"}</p>
                 <p title="Wave Direction"><img src={WaveDirectionImg} alt="wave direction" 
                     style={{
