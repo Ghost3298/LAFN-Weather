@@ -32,7 +32,8 @@
 
 .MainDisplay .CurrentDataDiv .CurrentDataDivChild:nth-child(2){
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .MainDisplay .CurrentDataDiv img{
@@ -95,3 +96,100 @@
     width: auto;
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .MainDisplay{
+        width: 85%;
+        height: 450px;
+        margin: auto;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+    .MainDisplay select{
+        width: 80%;
+        margin: auto;
+        height: 35px;
+        border-radius: 14px;
+        border: 1px solid #91cfec;
+        background-color: #c3e4f3;
+    }
+    
+    .MainDisplay .CurrentDataDiv{
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+        align-items: center;
+    }
+
+    .MainDisplay .CurrentDataDiv .CurrentDataDivChild{
+        width: 100%;
+        padding: 25px;
+    }
+
+    .MainDisplay .CurrentDataDiv img{
+        height: 150px;
+        width: auto
+    }
+
+    .MainDisplay .CurrentDataDiv .CurrentDataDivChild .CurrentDataTemp{
+        font-size: 16px;
+    }
+
+    .WeeklyForecastDisplay{
+        background-image: linear-gradient(to right, #253949 0%, #253949 50%, #259ed9 100%);
+        width: 92%;
+        height: auto;
+        margin:  10px auto;
+        padding: 5px 10px;
+        border-radius: 30px;
+        color: #ffffff;
+    }
+    
+    .WeeklyForecastDisplay .WeeklyForecastList{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    
+    .WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData{
+        width: 80%;
+        margin: auto;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData .forecastItem{
+        display: flex;
+        align-items: center;
+    }
+    
+    .WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData .forecastItem img{
+        height: 50px;
+        margin: 0px 25px;
+    }
+    
+    .WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData:not(:last-child) {
+        border-bottom: 1px solid #ffffff4b;
+        border-right: none;
+    }
+    
+    .WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData .forecastDetails{
+        font-size: 12px;
+    }
+    .WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData .forecastDetails p img{
+        filter: invert(1);
+        height: 24px;
+        width: auto;
+        margin-right: 10px;
+    }
+  }

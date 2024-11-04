@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import currentStateImages from './CurrentStateImages.json';
 import Arrow from './images/gps.png';
 
-const CurrentData = ({long, lat, cityname}) => {
+const CurrentData = ({ long, lat, cityname }) => {
     const [temp, setTemp] = useState(null);
     const [dayOrNight, setDayOrNight] = useState(null);
     const [weatherCode, setWeatherCode] = useState(null);
@@ -48,30 +48,37 @@ const CurrentData = ({long, lat, cityname}) => {
 
     useEffect(() => {
         getCurrentData();
-    }); 
+    }, [lat, long, cityname]); // Only re-run fetch when lat, long, or cityname change
+
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
     return (
         <div className='CurrentDataDiv'>
             <div className='CurrentDataDivChild'>
                 <h2>{cityname}</h2>
-            {error && <p>Error: {error}</p>}
-            <div className='CurrentDataTemp'>{temp !== null ? `${temp} °C` : 'Loading...'}</div>
-            <div className='CurrentDataWind'>Wind Speed: {windSpeed !== null ? `${windSpeed} km/h` : 'Loading...'}
-            <img src={Arrow} alt="arrow" 
-                style={{
-                    transform: `rotate(${windDirection-180}deg)`,
-                    transition: 'transform 0.5s',
-                    width: '50px',
-                    height: 'auto',
-                    padding: '10px',
-                    marginLeft: '50px'
-                }}
-                title = {windDirection-180}
-            />
-            </div>
+                {error && <p>Error: {error}</p>}
+                <div className='CurrentDataTemp'>{temp !== null ? `${temp} °C` : 'Loading...'}</div>
+                <div className='CurrentDataWind'>
+                    Wind Speed: {windSpeed !== null ? `${windSpeed} km/h` : 'Loading...'}
+                    <img 
+                        src={Arrow} 
+                        alt="arrow" 
+                        style={{
+                            transform: `rotate(${windDirection - 180}deg)`,
+                            transition: 'transform 0.5s',
+                            width: '50px',
+                            height: 'auto',
+                            padding: '10px',
+                            marginLeft: '50px'
+                        }}
+                        title={windDirection - 180}
+                    />
+                </div>
             </div>
             <div className='CurrentDataDivChild'>
-            {weatherImage && <img src={weatherImage} alt="Weather condition" />}
+                {weatherImage && <img src={weatherImage} alt="Weather condition" />}
+                <div className='CurrentDate'>{formattedDate}</div> {/* Display day and date */}
             </div>
         </div>
     );

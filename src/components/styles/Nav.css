@@ -18,3 +18,16 @@
     color: #ffffff;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .NavList{
+        width: 90%;
+        margin: auto;
+        position: relative;
+        border-radius: 0px 0px 30px 30px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+    }
+  }
