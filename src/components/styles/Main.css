@@ -1,0 +1,97 @@
+.MainDisplay {
+    background-image: linear-gradient(to right, #253949 0%, #253949 50%, #259ed9 100%);
+    width: 75%;
+    height: 350px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+.MainDisplay select{
+    width: 25%;
+    height: 35px;
+    border-radius: 14px;
+    border: 1px solid #91cfec;
+    background-color: #c3e4f3;
+}
+
+.MainDisplay select:focus{
+    outline: none;
+}
+
+.MainDisplay .CurrentDataDiv{
+    width: 100%;
+    display: flex;
+}
+
+.MainDisplay .CurrentDataDiv .CurrentDataDivChild{
+    width: 50%;
+    padding: 25px;
+}
+
+.MainDisplay .CurrentDataDiv .CurrentDataDivChild:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+.MainDisplay .CurrentDataDiv img{
+    height: 250px;
+    width: auto
+}
+
+.MainDisplay .CurrentDataDiv .CurrentDataDivChild .CurrentDataTemp{
+    font-size: 96px;
+}
+
+.MainDisplay .CurrentDataDiv .CurrentDataDivChild .CurrentDataWind{
+    display: flex;
+    flex-direction: column;
+}
+
+.WeeklyForecastDisplay{
+    background-image: linear-gradient(to right, #253949 0%, #253949 50%, #259ed9 100%);
+    width: 80%;
+    height: 200px;
+    margin:  10px auto;
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+.WeeklyForecastDisplay .WeeklyForecastList{
+    height: auto;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData{
+    width: calc(100% / 7);
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData .forecastItem img{
+    width: 50px
+}
+
+.WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData:not(:last-child) {
+    border-right: 1px solid #ffffff4b;
+}
+
+.WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData .forecastDetails{
+    font-size: 12px;
+}
+.WeeklyForecastDisplay .WeeklyForecastList .WeeklyForecastData .forecastDetails p img{
+    filter: invert(1);
+    height: 24px;
+    width: auto;
+    margin-right: 10px;
+}

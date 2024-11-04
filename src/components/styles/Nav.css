@@ -1,0 +1,20 @@
+.NavList{
+    width: 100px;
+    height: 92%;
+    position: fixed;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 15px;
+    background-color: #253949;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.NavList li{
+    padding: 20px 0px
+}
+
+.NavList li a{
+    color: #ffffff;
+    text-decoration: none;
+}

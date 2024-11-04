@@ -1,0 +1,16 @@
+{
+    "day": {
+        "clear": "images/sun.png",
+        "partly_cloudy": "images/partly-cloudy.png",
+        "cloudy": "images/cloudy.png",
+        "rain": "images/rain.png",
+        "snow": "images/snow.png"
+    },
+    "night": {
+        "clear": "images/night.png",
+        "partly_cloudy": "images/partly-cloudy-night.png",
+        "cloudy": "images/cloudy-night.png",
+        "rain": "images/rainy.png",
+        "snow": "images/night-snow.png"
+    }
+}

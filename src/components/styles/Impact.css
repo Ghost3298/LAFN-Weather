@@ -1,0 +1,63 @@
+.ImpactDisplay{
+    background-image: linear-gradient(to right, #253949 0%, #253949 50%, #259ed9 100%);
+    width: 75%;
+    height: 569px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+.ImpactDisplay .ImpactHeader{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ImpactDisplay .ImpactHeader select{
+    width: 25%;
+    height: 35px;
+    border-radius: 14px;
+    border: 1px solid #91cfec;
+    background-color: #c3e4f3;
+}
+
+.ImpactDisplay .ImpactHeader select:focus{
+    outline: none;
+}
+
+
+.ImpactDisplay .ImpactHeader p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImpactDisplay .ImpactHeader p img {
+    filter: invert(1);
+    height: 32px;
+    margin-right: 20px;
+}
+
+.ImpactDisplay .ImpactData{
+    width: 100%;
+}
+
+.ImpactDisplay .ImpactData table{
+    width: 100%;
+    border: 1px solid #ffffff4d;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.ImpactDisplay .ImpactData table td{
+    border: 1px solid #ffffff4d;
+    height: 35px;
+    padding: 20px;
+    width: 50%;
+}
+
+.ImpactDisplay .ImpactData table td:nth-child(even):not(:first-child){
+    text-align: center;
+    font-weight: bold;
+    text-Shadow: 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
+}

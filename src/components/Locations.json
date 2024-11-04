@@ -1,0 +1,40 @@
+{
+    "Lebanon_Coastal_Cities": [
+      {
+        "city": "Beirut",
+        "latitude": 33.8958,
+        "longitude": 35.5018
+      },
+      {
+        "city": "Tripoli",
+        "latitude": 34.4380,
+        "longitude": 35.8410
+      },
+      {
+        "city": "Saida",
+        "latitude": 33.5407,
+        "longitude": 35.3759
+      },
+      {
+        "city": "Tyre",
+        "latitude": 33.2670,
+        "longitude": 35.1987
+      },
+      {
+        "city": "Jounieh",
+        "latitude": 33.9661,
+        "longitude": 35.6347
+      },
+      {
+        "city": "Batroun",
+        "latitude": 34.3942,
+        "longitude": 35.6285
+      },
+      {
+        "city": "Byblos",
+        "latitude": 34.1185,
+        "longitude": 35.6460
+      }
+    ]
+  }
+  
