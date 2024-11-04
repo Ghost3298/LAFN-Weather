@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import Nav from "./components/Nav";
 import Impact from "./components/Impact";
 import './App.css';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/impact" element={<Impact />} />
         </Routes>
+
+        <Footer />
       </Router>
     </div>
   );
