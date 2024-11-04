@@ -66,6 +66,7 @@ const CurrentData = ({long, lat, cityname}) => {
                     padding: '10px',
                     marginLeft: '50px'
                 }}
+                title = {windDirection}
             />
             </div>
             </div>
