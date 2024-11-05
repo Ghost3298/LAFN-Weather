@@ -1,0 +1,7 @@
+.ImpactDisplay .ImpactHeader select{
+    width: 25%;
+    height: 35px;
+    border-radius: 14px;
+    border: 1px solid #91cfec;
+    background-color: #c3e4f3;
+}

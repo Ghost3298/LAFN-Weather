@@ -1,33 +1,77 @@
-.NavList{
+.NavContainer {
+    position: relative;
+}
+
+.NavToggle {
+    display: none;
+    background-color: #253949;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.NavList {
     width: 100px;
     height: 92%;
     position: fixed;
     color: #ffffff;
     list-style-type: none;
-    margin: 0px 0px;
+    margin: 0;
     padding: 15px;
     background-color: #253949;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0 30px 30px 0;
 }
 
-.NavList li{
-    padding: 20px 0px
+.NavList li {
+    padding: 20px 0;
 }
 
-.NavList li a{
+.NavList li a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Mobile Styles */
 @media only screen and (max-width: 600px) {
-    .NavList{
+    .NavList {
         width: 90%;
         margin: auto;
         position: relative;
-        border-radius: 0px 0px 30px 30px;
-        margin-top: 0px;
+        border-radius: 0 0 30px 30px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-evenly;
+        margin-bottom: 0; /* Remove bottom margin when open */
+        padding: 0;
+        overflow: hidden;
+        height: 0; /* Initially collapsed */
+        opacity: 0;
+        transition: height 0.3s ease, opacity 0.3s ease; /* Add animation */
+    }
+
+    .NavList.open {
+        height: auto; /* Adjust height as needed */
+        width: 95%;
+        opacity: 1;
         margin-bottom: 25px;
     }
-  }
+
+    .NavToggle {
+        display: block;
+        background-color: #253949;
+        color: #ffffff;
+        border: none;
+        padding: 15px;
+        width: 95%;
+        border-radius: 0 0 30px 30px;
+        margin: auto;
+        margin-bottom: 0; /* Remove gap between button and menu */
+    }
+
+    .NavToggleOpen{
+        border-radius: 0px;
+    }
+}

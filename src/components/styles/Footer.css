@@ -26,14 +26,24 @@
         position: relative;
         border-radius: 30px 30px 0px 0px;
         margin-top: 20px;
-        display: flex;
-        justify-content: space-evenly;
         margin-bottom: 0px;
         bottom: 0px;
         height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .Footer img{
         width: 50px;
+        margin: auto;
+    }
+
+    .Footer p{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        margin: auto;
+        text-align: center;
     }
     
   }

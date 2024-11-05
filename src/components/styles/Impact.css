@@ -67,6 +67,7 @@
     .ImpactDisplay{
         width: 70%;
         height: auto;
+        margin-top: 25px;
     }
 
     .ImpactDisplay .ImpactHeader{
@@ -125,4 +126,7 @@
         text-Shadow: 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
     }
     
+    .aboutUs{
+        height: 400px;
+    }
 }
