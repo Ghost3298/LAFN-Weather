@@ -94,7 +94,7 @@ const Impact = () => {
     return (
         <div className="ImpactDisplay">
             <div className="ImpactHeader">
-                <select onChange={handleCityChange} value={selectedCity}>
+                <select id="impactSelect" onChange={handleCityChange} value={selectedCity}>
                     {userLocation && (
                         <option value="Your Location">Your Location</option>
                     )}
@@ -107,14 +107,16 @@ const Impact = () => {
                 
                 {error && <p className="error">{error}</p>}
                  
-                <p title="Wave Height"><img src={WaveHeightImg} alt="wave height" /> {waveHeight || "N/A"}</p>
-                <p title="Wave Direction"><img src={WaveDirectionImg} alt="wave direction" 
-                    style={{
-                        transform: `rotate(${waveDirection-90}deg)`,
-                        transition: 'transform 0.5s',
-                    }}
-                />{waveDirection || "N/A"}</p>
-                <p title="Wave Period"><img src={WavePeriodImg} alt="wave period" /> {wavePeriod || "N/A"}</p>
+                 <div className="ImpactDetails">
+                    <p title="Wave Height"><img src={WaveHeightImg} alt="wave height" /> {waveHeight || "N/A"}</p>
+                    <p title="Wave Direction"><img src={WaveDirectionImg} alt="wave direction" 
+                        style={{
+                            transform: `rotate(${waveDirection-90}deg)`,
+                            transition: 'transform 0.5s',
+                        }}
+                    />{waveDirection || "N/A"}</p>
+                    <p title="Wave Period"><img src={WavePeriodImg} alt="wave period" /> {wavePeriod || "N/A"}</p>
+                </div>
             </div>
 
             <div className="ImpactData">

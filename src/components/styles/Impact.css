@@ -66,36 +66,41 @@
 @media only screen and (max-width: 600px) {
     .ImpactDisplay{
         width: 70%;
-        height: auto;
         margin-top: 25px;
     }
 
     .ImpactDisplay .ImpactHeader{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         gap: 15px;
         margin-bottom: 15px;
+        width: 100%;
     }
     
-    .ImpactDisplay .ImpactHeader select{
+    .ImpactDisplay .ImpactHeader #impactSelect{
         width: 90%;
         margin: auto;
         height: 35px;
         border-radius: 14px;
         border: 1px solid #91cfec;
         background-color: #c3e4f3;
+        display: block;
     }
     
-    
-    .ImpactDisplay .ImpactHeader p{
+    .ImpactDisplay .ImpactHeader .ImpactDetails{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ImpactDisplay .ImpactHeader .ImpactDetails p{
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 5px;
     }
     
-    .ImpactDisplay .ImpactHeader p img {
+    .ImpactDisplay .ImpactHeader .ImpactDetails p img {
         filter: invert(1);
         height: 24px;
         margin-right: 20px;
