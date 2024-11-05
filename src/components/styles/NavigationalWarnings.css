@@ -1,0 +1,52 @@
+.NavigationalDisplay {
+    background-image: linear-gradient(to right, #253949 0%, #253949 50%, #259ed9 100%);
+    width: 75%;
+    height: 569px; /* Change to auto to allow dynamic height based on content */
+    overflow-x: auto;
+    margin: auto;
+    padding: 50px;
+    border-radius: 30px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px; /* Add space between warning divs */
+}
+
+.NavigationalDisplay .warning {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white for glass effect */
+    border-radius: 20px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Glass effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    display: flex;
+    width: calc(90% / 3 - 5px); /* Allow three warnings per row with some gap */
+    min-width: 30%; /* Minimum width for each warning */
+    padding: 15px; /* Padding inside the warning div */
+    align-items: center; /* Center items vertically */
+    height: 150px;
+}
+
+.NavigationalDisplay .warning img {
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+}
+
+.NavigationalDisplay .warningDetails {
+    flex-grow: 1;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .NavigationalDisplay {
+        width: 70%;
+        margin-top:25px;
+        flex-direction: column; /* Stack warnings vertically */
+        height: auto;
+    }
+
+    .NavigationalDisplay .warning {
+        width: 107%;/* Full width for each warning */
+        min-width: 100%; /* Ensure warnings take full width */
+    }
+}

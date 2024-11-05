@@ -33,7 +33,7 @@ const Nav = () => {
                 <li><a href="/predictions">Predictions</a></li>
                 <li><a href="/impact">Impact</a></li>
                 <li><a href="#">History</a></li>
-                <li><a href="#">Navigational Hazards</a></li>
+                <li><a href="/navigationalWarnings">Navigational Warnings</a></li>
             </ul>
         </nav>
     );

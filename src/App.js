@@ -7,6 +7,7 @@ import './App.css';
 import Footer from "./components/Footer";
 import Predictions from "./components/Predictions";
 import AboutUs from "./components/AboutUs";
+import NavigationalWarnings from "./components/NavigationalWarnings";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
           <Route path="/impact" element={<Impact />} />
           <Route path="/predictions" element={<Predictions />} />
           <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/navigationalWarnings" element={<NavigationalWarnings />} />
         </Routes>
 
         <Footer />

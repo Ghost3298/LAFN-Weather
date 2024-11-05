@@ -1,0 +1,8 @@
+[
+    {
+        "default-warning" : "images/warning.png",
+        "Hazard" : "images/warning.png",
+        "Restricted Area" : "images/weapon-warning.png",
+        "Weather" : "images/cloud-warning.png"
+    }
+]

@@ -26,13 +26,13 @@
 }
 
 
-.ImpactDisplay .ImpactHeader p{
+.ImpactDisplay .ImpactHeader .ImpactDetails p{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ImpactDisplay .ImpactHeader p img {
+.ImpactDisplay .ImpactHeader .ImpactDetails p img {
     filter: invert(1);
     height: 32px;
     margin-right: 20px;

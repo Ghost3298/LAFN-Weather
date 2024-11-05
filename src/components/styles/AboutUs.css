@@ -1,0 +1,10 @@
+.aboutUs img{
+    width: 250px;
+    margin: auto;
+}
+
+@media only screen and (max-width : 600px){
+    .aboutUs{
+        height: auto ;
+    }
+}
