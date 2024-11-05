@@ -37,7 +37,7 @@
 }
 
 /* Media Query for Mobile View */
-@media (max-width: 768px) { /* Adjust the max-width as needed */
+@media (max-width: 884px) { /* Adjust the max-width as needed */
     .NavigationalDisplay {
         width: 90%;
         margin-top:25px;

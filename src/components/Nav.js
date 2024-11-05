@@ -11,8 +11,8 @@ const Nav = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 600);
-            if (window.innerWidth > 600) {
+            setIsMobile(window.innerWidth <= 884);
+            if (window.innerWidth > 884) {
                 setIsOpen(false); // Close menu if switching back to desktop view
             }
         };

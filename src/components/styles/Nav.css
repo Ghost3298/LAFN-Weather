@@ -34,7 +34,7 @@
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 884px) {
     .NavList {
         width: 90%;
         margin: auto;

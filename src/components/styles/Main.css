@@ -97,7 +97,7 @@
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 884px) {
     .MainDisplay{
         width: 85%;
         height: 450px;
