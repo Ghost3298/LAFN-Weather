@@ -39,15 +39,16 @@
 /* Media Query for Mobile View */
 @media (max-width: 768px) { /* Adjust the max-width as needed */
     .NavigationalDisplay {
-        width: 70%;
+        width: 90%;
         margin-top:25px;
         flex-direction: column; /* Stack warnings vertically */
         height: auto;
         overflow: hidden;
+        padding:10px;
     }
 
     .NavigationalDisplay .warning {
-        width: 107%;/* Full width for each warning */
-        min-width: 100%; /* Ensure warnings take full width */
+        width: 90%;/* Full width for each warning */
+        margin:5px;
     }
 }
