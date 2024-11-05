@@ -43,6 +43,7 @@
         margin-top:25px;
         flex-direction: column; /* Stack warnings vertically */
         height: auto;
+        overflow: hidden;
     }
 
     .NavigationalDisplay .warning {
