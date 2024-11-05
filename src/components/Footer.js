@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="Footer">
             <a href="/aboutUs" style={{textDecoration: "none",}}>
             <img src={Logo} alt="Logo" />
-            {isMobile && <p>LNHS</p>}
+            {isMobile && <p>Lebanese Navy Hydrographic Service</p>}
             </a>
         </div>
     );
