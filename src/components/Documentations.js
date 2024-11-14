@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { MapContainer, TileLayer, Polygon, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Polygon, Popup, Marker } from "react-leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const Documentations = () => {
@@ -29,16 +30,16 @@ const Documentations = () => {
       info: "LB301",
     },
     {
-        id: 3,
-        coordinates: [
-          [34.000, 34.700], // Top-left corner
-          [34.000, 35.700], // Top-right corner
-          [33.100, 35.700], // Bottom-right corner
-          [33.100, 34.700], // Bottom-left corner
-        ],
-        color: "rgba(0, 255, 0, 0.5)",
-        info: "LB302",
-      },
+      id: 3,
+      coordinates: [
+        [34.000, 34.700], // Top-left corner
+        [34.000, 35.700], // Top-right corner
+        [33.100, 35.700], // Bottom-right corner
+        [33.100, 34.700], // Bottom-left corner
+      ],
+      color: "rgba(0, 255, 0, 0.5)",
+      info: "LB302",
+    },
   ];
 
   return (
@@ -56,19 +57,30 @@ const Documentations = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
 
-          {/* Render clickable polygons for each box */}
+          {/* Render clickable polygons and labels */}
           {boxData.map((box) => (
-            <Polygon
-              key={box.id}
-              positions={box.coordinates}
-              pathOptions={{ color: box.color, fillColor: box.color, fillOpacity: 0.5 }}
-              eventHandlers={{
-                click: () => {
-                  setSelectedLocation(box.info);
-                },
-              }}
-            >
-            </Polygon>
+            <React.Fragment key={box.id}>
+              <Polygon
+                positions={box.coordinates}
+                pathOptions={{ color: box.color, fillColor: box.color, fillOpacity: 0.5 }}
+                eventHandlers={{
+                  click: () => {
+                    setSelectedLocation(box.info);
+                  },
+                }}
+              />
+
+              {/* Marker with custom divIcon for text label at the top-left corner */}
+              <Marker
+                position={box.coordinates[0]} // Top-left corner of the polygon
+                icon={L.divIcon({
+                  className: "custom-label",
+                  html: `<span style="color: black; background: white; padding: 2px 4px; border-radius: 3px;">${box.info}</span>`,
+                  iconSize: [30, 15], // Adjust as needed
+                })}
+                interactive={false} // Non-clickable marker
+              />
+            </React.Fragment>
           ))}
         </MapContainer>
 
