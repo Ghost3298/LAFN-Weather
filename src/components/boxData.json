@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "coordinates": [
+        [35.300, 34.480],
+        [35.300, 36.480],
+        [32.895, 36.480],
+        [32.895, 34.480]
+      ],
+      "color": "rgba(255, 255, 255, 0.5)",
+      "info": "LB303",
+      "details": "Baniyas to Akko",
+      "scale_enc": "1:180.000",
+      "scale_pc": "1:250.000",
+      "int": "Yes"
+    },
+    {
+      "id": 2,
+      "coordinates": [
+        [34.650, 35.150],
+        [34.650, 36.150],
+        [33.650, 36.150],
+        [33.650, 35.150]
+      ],
+      "color": "rgba(0, 255, 0, 0.5)",
+      "info": "LB301",
+      "details": "Tripoli to Ras es Saadiyat",
+      "scale_enc": "1:90.000",
+      "scale_pc": "1:100.000",
+      "int": ""
+    },
+    {
+      "id": 3,
+      "coordinates": [
+        [34.000, 34.700],
+        [34.000, 35.700],
+        [33.100, 35.700],
+        [33.100, 34.700]
+      ],
+      "color": "rgba(0, 255, 0, 0.5)",
+      "info": "LB302",
+      "details": "Ras El Maameltein to Ras Al Naqoura",
+      "scale_enc": "1:90.000",
+      "scale_pc": "1:100.000",
+      "int": ""
+    }
+  ]
+  
