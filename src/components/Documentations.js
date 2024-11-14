@@ -49,7 +49,7 @@ const Documentations = () => {
         {selectedLocation && (
           <div style={{ marginTop: "10px", padding: "10px", backgroundColor: "#f0f0f0", borderRadius: "4px" }}>
             <p>{selectedLocation}</p>
-            <p>{details}</p>
+            <p style={{ whiteSpace: 'pre-line' }}>{details}</p>
             <p>Scale ENC: {scaleEnc}</p>
             <p>Scale PC: {scalePc}</p>
             <p>INT: {int}</p>
