@@ -306,8 +306,64 @@ html, body {
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 884px) {
 
+
+.HistoryView .tabs button{
+  width: 50%;
+  height: 35px;
+  border: 1px solid rgba(0,0,0,0.1)
+}
+.HistoryView .tabs button.active{
+  background-color: #9ec4f3;
+}
+
+.tabContent{
+  margin-top: 25px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.dateData{
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 10px
+}
+
+.HistoryView .HistoryHead{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.HistoryView .HistoryHead div{
+  width: 100%;
+  display: flex;
+}
+
+.HistoryView .HistoryHead div label{
+  width: 33.33%;
+}
+
+.HistoryView .HistoryHead input, .HistoryView .HistoryHead select{
+  width: calc(100%/3);
+  height: 35px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0,0,0,0.1)
+}
+
+.HistoryView .HistoryHead input,.HistoryView .HistoryHead select:focus{
+  outline:none
+}
+
+
+
+@media only screen and (max-width: 884px) {
   .HomeView{
     flex-direction: column-reverse;
   }
@@ -456,6 +512,24 @@ html, body {
 .ImpactDisplay .ImpactHeader .ImpactDetails p{
   gap: 15px;
 }
+
+.tabContent{
+  margin-top: 25px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.dateData{
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 125px;
+  font-size: 10px;
+  padding: 10px
+}
 }
 
 /* Target iOS devices */
@@ -466,6 +540,14 @@ html, body {
     width: 50%;
     border-radius: 0px 0px;
   }
+
+  .HistoryView .HistoryHead input, .HistoryView .HistoryHead select {
+    -webkit-appearance: none; /* Disable default styling on iPhone */
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0px 0px;
+  }
+  
 }
 
 .NavigationalDisplay{
