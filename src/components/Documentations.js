@@ -5,7 +5,6 @@ import "leaflet/dist/leaflet.css";
 const Documentations = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
 
-  // Sample data for clickable boxes with four corners and colors
   const boxData = [
     {
       id: 1,
@@ -29,7 +28,17 @@ const Documentations = () => {
       color: "rgba(0, 255, 0, 0.5)",
       info: "LB301",
     },
-    // Add more locations as needed
+    {
+        id: 3,
+        coordinates: [
+          [34.000, 34.700], // Top-left corner
+          [34.000, 35.700], // Top-right corner
+          [33.100, 35.700], // Bottom-right corner
+          [33.100, 34.700], // Bottom-left corner
+        ],
+        color: "rgba(0, 255, 0, 0.5)",
+        info: "LB302",
+      },
   ];
 
   return (
