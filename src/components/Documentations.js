@@ -39,7 +39,7 @@ const Documentations = () => {
 
         <MapContainer
           center={[33.8938, 35.5018]} // Default center (Beirut)
-          zoom={10}
+          zoom={8}
           style={{ width: "100%", height: "500px", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
         >
           <TileLayer
