@@ -1,0 +1,20 @@
+{
+    "news": [
+      {
+        "title": "news #1",
+        "imgSrc": "images/night.png",
+        "text": "this is a test text for presentation"
+      },
+      {
+        "title": "news #2",
+        "imgSrc": "images/LAF.png",
+        "text": "this is a test text for presentation"
+      },
+      {
+        "title": "news #3",
+        "imgSrc": "images/Logo.png",
+        "text": "this is a test text for presentation"
+      }
+    ]
+  }
+  

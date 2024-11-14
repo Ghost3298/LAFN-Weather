@@ -1,38 +1,538 @@
-.App {
+html, body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  width: 100%;
+}
+
+.Navbar {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #253949;
+}
+
+.Navbar img {
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.Navbar ul {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Navbar ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Navbar ul a:hover {
+  color: orange;
+}
+
+.Navbar .NavToggle {
+  display: none;
+  background-color: #253949;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.Footer{
+  position: relative;
+  width: 100%;
+  height: 99px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #253949;
+  bottom: 0px;
+}
+
+.Footer a{
+  padding: 10px; 
+}
+.Footer a img{
+  width: 75px;
+  height: 75px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 5px
+}
+
+.Main{
+  background-color: rgb(232, 232, 232);
+  min-height: 350px;
+  height: auto;
+  padding:100px 75px 50px 75px;
+}
+
+.HomeView{
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+.HomeView .HomeChild{
+  flex-grow: 1;
+  width: auto;
+  min-width: 35%;
+  padding: 15px;
+  height: 525px;
+}
+
+.HomeView .HomeChild:nth-child(1){
+  background-color: #ffffff;
+  overflow-y: auto;
+  height: 495px;
+}
+
+.HomeView .HomeChild:nth-child(2) {
+  background-color: #9ec4f3;
+  box-shadow: inset 0 0 0 2px #ffffff; 
+  border: 10px solid transparent; 
+  box-sizing: border-box;
+}
+
+.CurrentWeatherDiv {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.25fr 0.25fr 1.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "CurrentWeatherLocation CurrentWeatherLocation"
+    "CurrentWeatherDate CurrentWeatherDate"
+    "CurrentWeatherImg CurrentWeatherTemp"
+    "CurrentWeatherCode CurrentWeatherCode"
+    "CurrentWeatherSunrise CurrentWeatherWind";
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CurrentWeatherLocation { 
+  grid-area: CurrentWeatherLocation;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CurrentWeatherLocation select{
+  width: 50%;
+  border: none;
+  height: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ImpactDisplay .ImpactHeader select{
+  width: 50%;
+  border: none;
+  height: 25px;
+}
+
+.ImpactDisplay .ImpactHeader {
   display: flex;
-  flex-direction: column;
+}
+
+.ImpactDisplay .ImpactHeader .ImpactDetails{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.ImpactDisplay .ImpactHeader .ImpactDetails p{
+  display: flex;
+  gap: 50px;
+}
+
+.ImpactDisplay .ImpactHeader img{
+  width: 30px;
+}
+
+.ImpactDisplay .ImpactHeader select:focus{
+  outline:none;
+}
+
+.ImpactDisplay .ImpactData{
+  width: 100%;
+}
+
+.ImpactDisplay .ImpactData table{
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin:25px 0px;
+  padding: 25px
+}
+
+.ImpactDisplay .ImpactData table thead{
+  font-weight: bold;
+}
+
+.ImpactDisplay .ImpactData table thead tr th{
+  padding: 15px
+}
+
+.ImpactDisplay .ImpactData table tr{
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.ImpactDisplay .ImpactData table tr td{
+  padding: 25px;
+  width: 50%;
+  text-align: center;
+}
+
+.CurrentWeatherLocation select:focus{
+  outline: none;
+}
+
+.ForecastView .ForecastLocation select{
+  width: 25%;
+  border: none;
+  height: 25px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.ForecastView .ForecastLocation select:focus{
+  outline: none;
+}
+
+.CurrentWeatherDate { 
+  grid-area: CurrentWeatherDate;
+}
+
+.CurrentWeatherImg { 
+  grid-area: CurrentWeatherImg; 
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.CurrentWeatherImg img { 
+  height: 175px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.CurrentWeatherTemp { 
+  grid-area: CurrentWeatherTemp;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CurrentWeatherCode { 
+  grid-area: CurrentWeatherCode;
+  font-weight: bold;
+}
+
+.CurrentWeatherSunrise { 
+  grid-area: CurrentWeatherSunrise; 
+  border-right: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.CurrentWeatherSunrise img{
+  height: 25px;
+  transform: translateY(5px);
+  margin-right: 5px;
+}
+
+.CurrentWeatherWind { 
+  grid-area: CurrentWeatherWind; 
+}
+
+.NewsCard {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  padding: 10px;
+  align-items: center;
+  height: 150px;
+  margin-top: 15px;
+}
+
+.NewsCard img{
+  width: 125px;
+  height: 125px;
+}
+
+.NewsCard .NewsCardBody{
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.AboutUs .AboutUsText {
+  overflow-wrap: break-word; 
+  white-space: normal;       
+  text-align: justify;       
+}
+
+.ForecastDetails ul{
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  margin: 25px 0px 25px 0px;
+  padding: 0px 0px;
+}
+
+.ForecastDetails ul li{
+  width: calc(100%/7);
+  height: auto;
+  padding: 5px;
+  background-color: #9ec4f3;
+  box-shadow: inset 0 0 0 2px #ffffff; 
+  border: 10px solid transparent; 
+  box-sizing: border-box;
+}
+
+.ForecastDayDiv{
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.ForecastDayDiv .CurrentWeatherTemp{
+  font-size: 20px;
+}
+
+#ForecastDayImg{
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 884px) {
+
+  .HomeView{
+    flex-direction: column-reverse;
   }
-  to {
-    transform: rotate(360deg);
+
+  .HomeView .HomeChild{
+    width: auto;
+    height: 500px;
+  }
+
+  .Main{
+    min-height: 500px;
+    padding: 75px 25px;
+  }
+
+  .Navbar{
+    height: 75px;
+    z-index: 999;
+  }
+
+  .Navbar img{
+    height: 112.5px;
+    width: 112.5px;
+  }
+  .Navbar .NavList {
+    background-color: #253949;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    z-index: 999;
+  }
+
+  .Navbar .NavList li{
+    padding: 20px
+  }
+
+  .Navbar .NavList.open {
+    height: auto;
+    opacity: 1;
+    margin-bottom: 25px; 
+  }
+
+  .Navbar .NavToggle {
+    display: block; 
+    background-color: #253949;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0; 
+  }
+
+  .Navbar .NavToggleOpen {
+    border-radius: 0;
+  }
+  
+.Footer{
+  height: 75px;
+  display: flex;
+}
+
+.Footer a{
+  padding: 7.5px; 
+}
+.Footer a img{
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 5px
+}
+
+
+.CurrentWeatherLocation, 
+.CurrentWeatherDate, 
+.CurrentWeatherTemp, 
+.CurrentWeatherCode, 
+.CurrentWeatherSunrise, 
+.CurrentWeatherWind {
+  font-size: 14px; /* Reduce font size for readability on small screens */
+}
+
+.CurrentWeatherTemp {
+  font-size: 24px; /* Slightly larger font for temperature display */
+}
+
+.CurrentWeatherSunrise, 
+.CurrentWeatherWind {
+  padding: 5px;
+}
+
+.NewsCard img{
+  width: 75px;
+  height: 75px;
+}
+
+.NewsCard .NewsCardBody{
+  font-size: 12px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.HomeView .HomeChild:nth-child(1){
+  height: auto;
+}
+
+.ForecastView .ForecastLocation select{
+  width: 100%;
+}
+
+.ForecastDetails ul{
+  flex-direction: column;
+  margin: 25px 0px 25px 0px;
+}
+
+.ForecastDetails ul li{
+  margin: 0px 0px 25px 0px;
+  width: 100%;
+} 
+
+#ForecastDayImg{
+  font-size: 7rem;
+}
+
+.ImpactDisplay .ImpactHeader {
+  flex-direction: column;
+}
+
+.ImpactDisplay .ImpactHeader  select{
+  width: 100%;
+  margin-bottom: 25px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.ImpactDisplay .ImpactHeader .ImpactDetails p{
+  gap: 15px;
+}
+}
+
+/* Target iOS devices */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+       only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  
+  select {
+    width: 50%;
+    border-radius: 0px 0px;
+  }
+}
+
+.NavigationalDisplay{
+  width: 100%;
+  height: 550px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.NavigationalDisplay .warning {
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  width: calc(90% / 3 - 5px);
+  min-width: 30%;
+  padding: 15px;
+  align-items: center;
+  height: 150px;
+}
+
+.NavigationalDisplay .warning img {
+  width: 75px;
+  height: 75px;
+  margin-right: 15px;
+}
+
+.NavigationalDisplay .warningDetails {
+  flex-grow: 1;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px;          
+  height: 8px;  
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin: 25px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; 
+  border-radius: 6px;   
+  height: 8px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+@media (max-width: 884px) { 
+  .NavigationalDisplay {
+      width: 100%;
+      margin-top:25px;
+      flex-direction: column;
+      height: auto;
+      overflow: hidden;
+  }
+
+  .NavigationalDisplay .warning {
+      width: 90%;
   }
 }
