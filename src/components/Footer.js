@@ -6,7 +6,7 @@ import Navy from './images/bahriye-removebg-preview.png';
 const Footer = () => {
     return(
         <div className="Footer">
-            <a href="#">
+            <a href="/contactUs">
                 <img src={Logo} alt="LNHS"/>
             </a>
             <a href="https://www.lebarmy.gov.lb" target="_blank" rel="noreferrer">
