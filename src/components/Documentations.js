@@ -16,7 +16,10 @@ const Documentations = () => {
       <div>
         <h3>Charting Plan:</h3>
         <MapContainer center={[33.8938, 35.5018]} zoom={7} style={{ width: "100%", height: "500px", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}>
-          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
+        <TileLayer 
+  url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" 
+  attribution='&copy; <a href="https://www.esri.com/en-us/arcgis/about-arcgis/terms">Esri</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' 
+/>
 
           {boxData.map((box) => (
             <React.Fragment key={box.id}>
