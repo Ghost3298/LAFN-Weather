@@ -472,7 +472,7 @@ html, body {
 }
 
 .NewsCard .NewsCardBody{
-  font-size: 0.45em;
+  font-size: 0.5em;
   padding: 5px;
   margin-left: 15px;
 }
@@ -617,4 +617,45 @@ html, body {
   .NavigationalDisplay .warning {
       width: 90%;
   }
+}
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;  
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content img{
+  height: 200px;
+  width: auto;
+}
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #9ec4f3;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
 }

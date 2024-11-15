@@ -15,6 +15,7 @@ const Home = () => {
                                 title={article.title}
                                 imgSrc={article.imgSrc}
                                 text={article.text}
+                                details={article.details}
                             />
                         );
                     })}

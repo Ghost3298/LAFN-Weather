@@ -3,17 +3,20 @@
       {
         "title": "Lebanon joins the IHO",
         "imgSrc": "images/Beirut_Port_Post_Explosion_Survey.jpg",
-        "text": "Lebanon has joined the International Hydrographic Organization. By becoming its 94th Member State, Lebanon will benefit from the organization’s resources and expertise in order to improve safety of navigation and contribute to the development of its maritime activities."
+        "text": "Lebanon has joined the International Hydrographic Organization. By becoming its 94th Member State.",
+        "details": "Lebanon has joined the International Hydrographic Organization. By becoming its 94th Member State. Lebanon will benefit from the organization’s resources and expertise in order to improve safety of navigation and contribute to the development of its maritime activities."
       },
       {
         "title": "Hydrographic equipment donation to the Lebanese Navy",
         "imgSrc": "images/LAF.png",
-        "text": "The Italian Navy Hydrographic Institute to donate hydrographic equipment to the Lebanese Navy to replace the equipment destroyed after the explosion."
+        "text": "The Italian Navy Hydrographic Institute to donate hydrographic equipment to the Lebanese Navy to replace the equipment destroyed after the explosion.",
+        "details": ""
       },
       {
         "title": "Lebanese Navy Hydrographic Service joins IC-ENC",
         "imgSrc": "images/Logo.png",
-        "text": "IC-ENC is pleased to welcome the Lebanese Navy Hydrographic Service (LNHS) as its 48th member. LNHS has been working closely with our Italian colleagues from Istituto Idrografico della Marina Militare (IIM) on the production of their first ENCs, and we thank the IIM for their efforts to encourage LNHS into the IC-ENC community – it’s great to see existing members recommending IC-ENC to other nations in this way."
+        "text": "IC-ENC is pleased to welcome the Lebanese Navy Hydrographic Service (LNHS) as its 48th member.",
+        "details": "IC-ENC is pleased to welcome the Lebanese Navy Hydrographic Service (LNHS) as its 48th member. LNHS has been working closely with our Italian colleagues from Istituto Idrografico della Marina Militare (IIM) on the production of their first ENCs, and we thank the IIM for their efforts to encourage LNHS into the IC-ENC community – it’s great to see existing members recommending IC-ENC to other nations in this way."
       }
     ]
   }
