@@ -633,6 +633,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .modal-content {
@@ -641,6 +642,8 @@ html, body {
   width: 80%;
   max-width: 500px;
   text-align: center;
+  overflow-wrap: break-word; 
+  white-space: normal;  
 }
 
 .modal-content img{
@@ -649,6 +652,7 @@ html, body {
 }
 .modal-content button {
   margin-top: 15px;
+  width: 150px;
   padding: 10px 15px;
   background-color: #9ec4f3;
   color: #000000;
