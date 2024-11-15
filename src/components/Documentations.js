@@ -63,7 +63,7 @@ const Documentations = () => {
       <div>
         <h3>Point of sales:</h3>
         <ul>
-          <li>Lebanese Navy - Beirut Naval Base - <a href="tel:+9611983451">+961 1 983 451/2/3 &nbsp; ext 43091</a></li>
+          <li>Lebanese Navy - Beirut Naval Base - <a href="tel:+9611983451" style={{color: "black", textDecoration:"none"}}>+961 1 983 451/2/3 &nbsp; ext 43091</a></li>
         </ul>
       </div>
     </div>
