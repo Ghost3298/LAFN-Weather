@@ -73,6 +73,82 @@
       "scale_enc": "1:45.000 - 1:12.000 (A)",
       "scale_pc": "1:40.000 - 1:12.000 (A)",
       "int": ""
+    },
+    {
+      "id": 6,
+      "coordinates": [
+        [33.62, 35.30],
+        [33.62, 35.4],
+        [33.53, 35.4],
+        [33.53, 35.30]
+      ],
+      "color": "rgba(0, 0, 255, 0.5)",
+      "info": "LB403",
+      "details": "Approach to Sidon",
+      "scale_enc": "1:22.000",
+      "scale_pc": "1:25.000",
+      "int": ""
+    },
+    {
+      "id": 7,
+      "coordinates": [
+        [33.35, 35.14],
+        [33.35, 35.24],
+        [33.22, 35.24],
+        [33.22, 35.14]
+      ],
+      "color": "rgba(0, 0, 255, 0.5)",
+      "info": "LB404",
+      "details": "Approach to Tyre",
+      "scale_enc": "1:22.000",
+      "scale_pc": "1:25.000",
+      "int": ""
+    },
+    {
+      "id": 8,
+      "coordinates": [
+        [34.48, 35.80],
+        [34.48, 35.84],
+        [34.43, 35.84],
+        [34.43, 35.80]
+      ],
+      "color": "rgba(255, 0, 0, 0.5)",
+      "info": "LB501",
+      "details": "Port of Tripoli",
+      "scale_enc": "1:6.000",
+      "scale_pc": "1:8.000",
+      "int": "yes"
+    },
+    {
+      "id": 9,
+      "coordinates": [
+        [33.90, 35.47],
+        [33.90, 35.51],
+        [33.86, 35.51],
+        [33.86, 35.47]
+      ],
+      "color": "rgba(255, 0, 0, 0.5)",
+      "info": "LB502",
+      "details": "Port of Beirut",
+      "scale_enc": "1:6.000",
+      "scale_pc": "1:8.000",
+      "int": "yes"
+    }
+    ,
+    {
+      "id": 10,
+      "coordinates": [
+        [33.59, 35.34],
+        [33.59, 35.38],
+        [33.55, 35.38],
+        [33.55, 35.34]
+      ],
+      "color": "rgba(255, 0, 0, 0.5)",
+      "info": "LB503",
+      "details": "Port of Sidon",
+      "scale_enc": "1:4.000",
+      "scale_pc": "1:6.000",
+      "int": "yes"
     }
   ]
   
