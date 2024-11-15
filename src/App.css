@@ -472,7 +472,7 @@ html, body {
 }
 
 .NewsCard .NewsCardBody{
-  font-size: 12px;
+  font-size: 0.5em;
   padding: 5px;
   margin-left: 15px;
 }
