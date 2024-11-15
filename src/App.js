@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
-//Importing Components
+// Importing Components
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -12,10 +12,16 @@ import History from "./components/History";
 import NavigationalWarnings from "./components/NavigationalWarnings";
 import Documentations from "./components/Documentations";
 import ContactUS from "./components/ContactUs";
+
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router
+        future={{
+          v7_startTransition: true, // Opt-in for state updates in startTransition
+          v7_relativeSplatPath: true, // Opt-in for relative route resolution in splat routes
+        }}
+      >
         <Nav />
       
         <div className="Main">
