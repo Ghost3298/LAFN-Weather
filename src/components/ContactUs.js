@@ -26,7 +26,7 @@ const ContactUS = () => {
                 </tr>
                 <tr>
                     <td>Email:</td>
-                    <td><a href="mailto:inhs.nave@army.gov.lb">Inhs.navy@army.gov.Ib</a></td>
+                    <td><a href="mailto:Inhs.navy@army.gov.lb">Inhs.navy@army.gov.lb</a></td>
                 </tr>
             </tbody>
         </table>
