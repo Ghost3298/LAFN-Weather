@@ -79,7 +79,7 @@ const History = () => {
     };
 
     const tabContents = [
-        <div className="tabContent">Tab 1 Content</div>,
+        //<div className="tabContent">Tab 1 Content</div>,
         <div className="tabContent">
             {forecastData && marineData ? (
                 forecastData.time && marineData.time ? (
@@ -109,7 +109,7 @@ const History = () => {
                     <p>Data is still loading...</p>
                 )
             ) : (
-                <p>Data is still loading...</p>
+                <p>Please select a city, start date and end date to get the data</p>
             )}
         </div>
     ];
@@ -131,16 +131,16 @@ const History = () => {
                             </option>
                         ))}
                     </select>
-                    <input type="date" id="startDate" onChange={handleDateChange} value={startDate} />
-                    <input type="date" id="endDate" onChange={handleDateChange} value={endDate} />
+                    <input type="date" id="startDate" onChange={handleDateChange} value={startDate} max={new Date().toISOString().split("T")[0]}/>
+                    <input type="date" id="endDate" onChange={handleDateChange} value={endDate} max={new Date().toISOString().split("T")[0]}/>
                 </div>
             </div>
 
             <div className="tabs">
-                <button onClick={() => setActiveTab(0)} className={activeTab === 0 ? "active" : ""}>
+                {/*<button onClick={() => setActiveTab(0)} className={activeTab === 0 ? "active" : ""}>
                     Tide
-                </button>
-                <button onClick={() => setActiveTab(1)} className={activeTab === 1 ? "active" : ""}>
+                </button>*/}
+                <button onClick={() => setActiveTab(0)} className={activeTab === 1 ? "active" : ""}>
                     Weather
                 </button>
             </div>
