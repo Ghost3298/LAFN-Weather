@@ -1,18 +1,27 @@
 import React from 'react';
 import CurrentWeather from './CurrentWeather';
 import News from './News';
-
+import NewsList from './News.json';
 const Home = () => {
     return(
     <div className="HomeView">
         <div className="HomeChild">
             <div className='News'>
                 <h3>News:</h3>
-                <News title="news #1" imgSrc='images/night.png' text="this is a test text for presentation" />
-                <News title="news #2" imgSrc='images/LAF.png' text="this is a test text for presentation" />
-                <News title="news #3" imgSrc='images/Logo.png' text="this is a test text for presentation" />
+                {NewsList.news.map((article, index) => {
+                        return (
+                            <News
+                                key={index}
+                                title={article.title}
+                                imgSrc={article.imgSrc}
+                                text={article.text}
+                            />
+                        );
+                    })}
             </div>
+            <br/>
             <hr/>
+            <br/>
             <div className='AboutUs'>
                 <h3>About Us:</h3>
                 <p className='AboutUsText'>
