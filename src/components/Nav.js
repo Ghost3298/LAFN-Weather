@@ -39,6 +39,7 @@ const Nav = () => {
                 <li><a href="/history">History</a></li>
                 <li><a href="/navigational-warnings">Navigational Warnings</a></li>
                 <li><a href="/documentations">Nautical Charts & Documentations</a></li>
+                <li><a href="/contactUs">Contact Us</a></li>
             </ul>
         </nav>
     );

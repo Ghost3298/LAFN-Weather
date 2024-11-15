@@ -663,3 +663,24 @@ html, body {
 .modal-content button:hover {
   background-color: #0056b3;
 }
+
+.ContactUsTable{
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-collapse: collapse;
+  min-height: 450px;
+}
+
+.ContactUsTable tbody tr{
+  height: 35px;
+}
+
+.ContactUsTable tbody tr td{
+  padding: 25px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.ContactUsTable tbody tr td a{
+  color: #000000;
+  text-decoration: none;
+}

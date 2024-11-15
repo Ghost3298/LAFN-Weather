@@ -11,7 +11,7 @@ import Impact from "./components/Impact";
 import History from "./components/History";
 import NavigationalWarnings from "./components/NavigationalWarnings";
 import Documentations from "./components/Documentations";
-
+import ContactUS from "./components/ContactUs";
 function App() {
   return (
     <div className="App">
@@ -26,6 +26,7 @@ function App() {
             <Route path="/history" element={<History />} />
             <Route path="/navigational-warnings" element={<NavigationalWarnings />} />
             <Route path="/documentations" element={<Documentations />} />
+            <Route path="/contactUs" element={<ContactUS />} />
           </Routes>
         </div>
 
