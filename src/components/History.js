@@ -109,7 +109,7 @@ const History = () => {
                     <p>Data is still loading...</p>
                 )
             ) : (
-                <p>Please select a city, start date and end date to get the data</p>
+                <p>Please select a city, start date and end date to get the data <br/> History starts from 1<sup>st</sup> January 2023</p>
             )}
         </div>
     ];
