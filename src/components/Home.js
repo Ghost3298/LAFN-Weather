@@ -44,9 +44,9 @@ const Home = () => {
                 Service plays a significant role in both national defence and the maritime economy, supporting
                 shipping, fishing, and offshore energy activities.<br/>
                 <br/>
-                Director of the Lebanese Navy Hydrographic Service<br/><br/>
+                <b>Director of the Lebanese Navy Hydrographic Service</b><br/><br/>
                 Captain (N) Afif Ghaith<br/><br/>
-                As Director of the Lebanese Navy Hydrographic Service, I can confidently say that hydrography and
+                "As Director of the Lebanese Navy Hydrographic Service, I can confidently say that hydrography and
                 nautical charts are absolutely vital for Lebanon’s maritime safety and prosperity. It is essential that
                 we provide accurate data to ensure the safe passage of vessels, whether they are transporting
                 goods, supporting tourism, or contributing to national defence. Our nautical charts help ships
@@ -55,7 +55,7 @@ const Home = () => {
                 and a thriving tourism industry, reliable hydrographic services are indispensable for the smooth
                 functioning of our economy. Additionally, through our surveys, we play a critical role in safeguarding
                 our marine environment, ensuring sustainable practices as we monitor and protect Lebanon’s
-                coastal and marine ecosystem.
+                coastal and marine ecosystem."
                 </p>
             </div>
         </div>

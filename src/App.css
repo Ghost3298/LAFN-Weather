@@ -617,6 +617,10 @@ html, body {
   .NavigationalDisplay .warning {
       width: 90%;
   }
+
+  .ChartsDetails{
+    font-size: 0.6em;
+  }
 }
 
 
@@ -687,4 +691,9 @@ html, body {
 
 .ContactUsTable tbody td:nth-child(odd){
   font-weight: bold;
+}
+
+
+.ChartsDetails{
+  width: 100%;
 }
