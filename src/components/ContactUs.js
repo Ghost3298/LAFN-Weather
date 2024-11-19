@@ -1,31 +1,32 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ContactUS = () => {
+    const { t } = useTranslation();
+
     return(
         <table className="ContactUsTable">
             <tbody>
                 <tr>
-                    <td>Address:</td>
+                    <td>{t('Address')}:</td>
                     <td>
-                        Lebanese Hydrographic Service,
-                        Beirut Naval Base,
-                        Beirut, Lebanon
+                        {t('AddressLoc')}
                     </td>
                 </tr>
                 <tr>
-                    <td>Tel:</td>
+                    <td>{t('Tel')}:</td>
                     <td>
-                        <a href="tel:+9611983451">+961 1 983 451/2/3 <br/> ext 43091</a>
+                        <a href="tel:+9611983451">{t('TelNum')}</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>Fax:</td>
+                    <td>{t('Fax')}:</td>
                     <td>
-                        +961 1 983 425
+                        {t('FaxNum')}
                     </td>
                 </tr>
                 <tr>
-                    <td>Email:</td>
+                    <td>{t('Email')}:</td>
                     <td><a href="mailto:Inhs.navy@army.gov.lb">Inhs.navy@army.gov.lb</a></td>
                 </tr>
             </tbody>

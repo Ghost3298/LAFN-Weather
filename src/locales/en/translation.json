@@ -1,4 +1,5 @@
 {
+    "Menu" : "Menu",
     "News": "News",
     "Home": "Home",
     "Forecast": "Forecast",
@@ -15,5 +16,12 @@
     "5ParAboutUs": "Given Lebanon’s strategic location along the Mediterranean coast, the Lebanese Navy Hydrographic Service plays a significant role in both national defence and the maritime economy, supporting shipping, fishing, and offshore energy activities.",
     "DirOfLNHS" : "Director of the Lebanese Navy Hydrographic Service",
     "DirOfLNHSName" : "Captain (N) Afif Ghaith",
-    "DirTalk" : "'As Director of the Lebanese Navy Hydrographic Service, I can confidently say that hydrography and nautical charts are absolutely vital for Lebanon’s maritime safety and prosperity. It is essential that we provide accurate data to ensure the safe passage of vessels, whether they are transporting goods, supporting tourism, or contributing to national defence. Our nautical charts help ships navigate safely through our busy waters, preventing accidents and minimizing risks in vital shipping lanes and around key ports. For a country such as Lebanon, which relies heavily on maritime trade and a thriving tourism industry, reliable hydrographic services are indispensable for the smooth functioning of our economy. Additionally, through our surveys, we play a critical role in safeguarding our marine environment, ensuring sustainable practices as we monitor and protect Lebanon’s coastal and marine ecosystem.'"
+    "DirTalk" : "'As Director of the Lebanese Navy Hydrographic Service, I can confidently say that hydrography and nautical charts are absolutely vital for Lebanon’s maritime safety and prosperity. It is essential that we provide accurate data to ensure the safe passage of vessels, whether they are transporting goods, supporting tourism, or contributing to national defence. Our nautical charts help ships navigate safely through our busy waters, preventing accidents and minimizing risks in vital shipping lanes and around key ports. For a country such as Lebanon, which relies heavily on maritime trade and a thriving tourism industry, reliable hydrographic services are indispensable for the smooth functioning of our economy. Additionally, through our surveys, we play a critical role in safeguarding our marine environment, ensuring sustainable practices as we monitor and protect Lebanon’s coastal and marine ecosystem.'",
+    "Address" : "Address",
+    "Tel" : "Tel",
+    "Fax" : "Fax",
+    "Email" : "Email" ,
+    "AddressLoc" : "Lebanese Hydrographic Service, Beirut Naval Base, Beirut, Lebanon",
+    "TelNum" : "+961 1 983 451/2/3 ext 43091",
+    "FaxNum" : "+961 1 983 425"
 }

@@ -41,7 +41,7 @@ const Nav = () => {
                     className={`NavToggle ${isMobile && isOpen ? "NavToggleOpen" : ""}`} 
                     onClick={toggleMenu}
                 >
-                    ☰ Menu
+                    ☰ {t('Menu')}
                 </button>
             )}
             <ul className={`NavList ${isMobile && isOpen ? "open" : ""}`}>
