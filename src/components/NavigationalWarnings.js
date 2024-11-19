@@ -33,10 +33,10 @@ const NavigationalWarnings = () => {
                         <div className="warningDetails">
                         <p><span  style={{color: "red", fontWeight: "bold"}} >{warning.type || "N/A"} </span><br/>
                         {warning.description || "No description available."}</p>
-                        <p> {warning.issuedDate || "N/A"} &nbsp; {"->"} &nbsp;
+                        <p style= {{fontSize: '0.75em'}}> {warning.issuedDate || "N/A"} &nbsp; {"->"} &nbsp;
                             {warning.expiryDate || "N/A"}</p>
                         {warning.geometry?.coordinates && (
-                            <p>Coordinates: {JSON.stringify(warning.geometry.coordinates)}</p>
+                            <p style={{fontSize: '0.8em'}}>Coordinates: {JSON.stringify(warning.geometry.coordinates)}</p>
                         )}
                         </div>
                     </div>

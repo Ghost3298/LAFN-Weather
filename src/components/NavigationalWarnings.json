@@ -1,156 +1,16 @@
 [   
    {
-        "title": "Navigational Warning 1",
+        "title": "Lateral Mark Displaced",
         "type": "Hazard",
-        "description": "Ship Wreck in the following position.",
-        "issuedDate": "2024-11-05",
+        "description": "Green Lateral Mark Displaced of Tyre port.",
+        "issuedDate": "2024-11-06",
         "status": "active",
         "geometry": {
             "type": "Point/Line/Polygon",
             "coordinates": [
-                [1,2]
+                [33.27625,35.2017]
             ]
         },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Restricted Area",
-        "description": "Live Shooting - Military Training.",
-        "issuedDate": "2024-11-01",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Weather",
-        "description": "Incoming storm.",
-        "issuedDate": "2024-11-02",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Restricted Area",
-        "description": "Live Shooting - Military Training.",
-        "issuedDate": "2024-11-01",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Weather",
-        "description": "Incoming storm.",
-        "issuedDate": "2024-11-02",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Restricted Area",
-        "description": "Live Shooting - Military Training.",
-        "issuedDate": "2024-11-01",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Weather",
-        "description": "Incoming storm.",
-        "issuedDate": "2024-11-02",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Restricted Area",
-        "description": "Live Shooting - Military Training.",
-        "issuedDate": "2024-11-01",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Weather",
-        "description": "Incoming storm.",
-        "issuedDate": "2024-11-02",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Restricted Area",
-        "description": "Live Shooting - Military Training.",
-        "issuedDate": "2024-11-01",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
-    },
-    {
-        "title": "Navigational Warning 1",
-        "type": "Weather",
-        "description": "Incoming storm.",
-        "issuedDate": "2024-11-02",
-        "status": "active",
-        "geometry": {
-            "type": "Point/Line/Polygon",
-            "coordinates": [
-                [1,2]
-            ]
-        },
-        "expiryDate": "2024-12-25"
+        "expiryDate": "2024-12-31"
     }
 ]
