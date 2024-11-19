@@ -38,6 +38,14 @@ html, body {
   color: orange;
 }
 
+.Navbar ul li button{
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px;
+  padding: 10px;
+}
+
 .Navbar .NavToggle {
   display: none;
   background-color: #253949;
@@ -696,4 +704,14 @@ html, body {
 
 .ChartsDetails{
   width: 100%;
+}
+
+html[dir='rtl'] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir='ltr'] {
+  direction: ltr;
+  text-align: left;
 }

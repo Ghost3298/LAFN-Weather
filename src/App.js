@@ -18,8 +18,8 @@ function App() {
     <div className="App">
       <Router
         future={{
-          v7_startTransition: true, // Opt-in for state updates in startTransition
-          v7_relativeSplatPath: true, // Opt-in for relative route resolution in splat routes
+          v7_startTransition: true, 
+          v7_relativeSplatPath: true,
         }}
       >
         <Nav />
