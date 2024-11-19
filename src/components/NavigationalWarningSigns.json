@@ -1,8 +1,14 @@
-[
-    {
-        "default-warning" : "images/warning.png",
-        "Hazard" : "images/warning.png",
-        "Restricted Area" : "images/weapon-warning.png",
-        "Weather" : "images/cloud-warning.png"
+{
+    "en": {
+        "default-warning": "images/warning.png",
+        "Hazard": "images/warning.png",
+        "Restricted Area": "images/weapon-warning.png",
+        "Weather": "images/cloud-warning.png"
+    },
+    "ar": {
+        "default-warning": "images/warning.png",
+        "خطر": "images/warning.png",
+        "منطقة محظورة": "images/weapon-warning.png",
+        "طقس": "images/cloud-warning.png"
     }
-]
+}
