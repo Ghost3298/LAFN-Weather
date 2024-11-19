@@ -39,11 +39,16 @@ html, body {
 }
 
 .Navbar ul li button{
-  background-color: transparent;
+  background-color: #456c8d;
   color: #ffffff;
   border: 1px solid rgba(255,255,255,0.1);
   font-size: 14px;
   padding: 10px;
+}
+
+.Navbar ul li button:active{
+  background-color: #253949;
+  color: orange
 }
 
 .Navbar .NavToggle {
