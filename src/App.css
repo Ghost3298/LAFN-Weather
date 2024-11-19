@@ -242,7 +242,7 @@ html, body {
   font-weight: bold;
 }
 
-.CurrentWeatherSunrise { 
+.CurrentWeatherSunrise{ 
   grid-area: CurrentWeatherSunrise; 
   border-right: 1px solid rgba(128, 128, 128, 0.5);
 }
@@ -714,4 +714,9 @@ html[dir='rtl'] {
 html[dir='ltr'] {
   direction: ltr;
   text-align: left;
+}
+
+html[dir='rtl'] .CurrentWeatherSunrise{
+  border-right: none;
+  border-left: 1px solid rgba(128, 128, 128, 0.5);
 }
