@@ -26,10 +26,11 @@ const Nav = () => {
 
     const { i18n } = useTranslation();
 
-    const switchLanguage = () => {
-        const newLanguage = i18n.language === 'en' ? 'ar' : 'en';
-        i18n.changeLanguage(newLanguage);
-    };
+  const switchLanguage = () => {
+    const newLanguage = i18n.language === 'en' ? 'ar' : 'en';
+    i18n.changeLanguage(newLanguage);
+    localStorage.setItem('i18nextLng', newLanguage); // Save the selected language
+  };
 
 
     return (
